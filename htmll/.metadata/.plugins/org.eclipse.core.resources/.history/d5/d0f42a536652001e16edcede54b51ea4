@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>simple website</title>
+<link rel="stylesheet" href="stylee.css">
+</head>
+<body link="#000" alink="#017bf5">	
+ <h2 align="center">
+	 <font face="lato" size="6">LOGO</font>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <font face="cinzel" size="4"
+	 <a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <a href="#">VIDEOS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <a href="#">PORTFOLIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <a href="#">BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="#">CONTACT US</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 </font>
+ </h2>
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<h1 align="center">
+	<font face="lato" color="017bf5" size="6">
+			BEAUTIFUL AND SIMPLE WEB PAGE
+		
+	</font>
+	
+</h1>
+
+<h3 align="center">
+	<font face="lato" color="000" size="5">
+			only using HTML
+		
+	</font>
+	
+</h3>
+<h3 align="center">
+	<font face="lato" color="017bf5" size="4">
+	<a href="#">Get Started</a> &nbsp;&nbsp;
+	<a href="#">Subscribe us</a>&nbsp;&nbsp;
+		
+	</font>
+
+
+
+</body>
+</html>

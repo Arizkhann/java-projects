@@ -1,0 +1,8 @@
+package com.java.inf;
+
+public enum Gender {
+
+	
+	
+	male,female
+}

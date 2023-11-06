@@ -1,0 +1,2 @@
+-- display all records from agent table 
+-- display agentid ,firstname ,lastname,city,state,from agent table

@@ -1,0 +1,27 @@
+package com.java.ejb;
+
+import java.io.Serializable;
+
+
+
+public class PatientMaster implements Serializable{
+
+ 
+
+	private String pid;
+
+	private String name;
+
+	private int age;
+
+	private int weight;
+
+	private String gender;
+
+	private String address;
+
+	private String phoneno;
+
+	private String disease;
+
+	private String drId;

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body>
+<h1>Create Employ</h1>
+<h:form>
+
+    Employ No
+		<h:inputText value="#{employ.empno}"/><br/>
+	
+	Employ Name
+		<h:inputText value="#{employ.name}"/>
+	
+	Gender
+		<h:inputText value="#{employ.gender}"/>
+	Department
+		<h:inputText value="#{employ.dept}"/>
+		
+	Designation
+		<h:inputText value="#{employ.desig}"/>
+	Basic
+		<h:inputText value="#{employ.basic}"/>
+
+
+</h:form>
+
+
+</h:body>
+
+
+
+</html>

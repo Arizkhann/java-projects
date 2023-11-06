@@ -1,0 +1,15 @@
+127.0.0.1 - - [11/Oct/2023:15:03:57 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:03:58 +0530] "GET /CanteenManagement/DashBoard.jsf HTTP/1.1" 200 3569
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:03:58 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:04:08 +0530] "POST /CanteenManagement/DashBoard.jsf;jsessionid=C1EA023BA9A46599468398A816F482FD HTTP/1.1" 200 5408
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:13:02 +0530] "POST /CanteenManagement/DashBoard.jsf;jsessionid=C1EA023BA9A46599468398A816F482FD HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:13:02 +0530] "GET /CanteenManagement/ShowCustomer.jsf HTTP/1.1" 200 2850
+127.0.0.1 - - [11/Oct/2023:15:13:34 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:13:35 +0530] "GET /CanteenManagement/Login.jsf HTTP/1.1" 200 3175
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:13:35 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:13:46 +0530] "POST /CanteenManagement/Login.jsf;jsessionid=CACC2DA0684DB024164346F18C2D320B HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:13:46 +0530] "GET /CanteenManagement/DashBoard.jsf HTTP/1.1" 200 3525
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:13:52 +0530] "POST /CanteenManagement/DashBoard.jsf HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:13:52 +0530] "GET /CanteenManagement/ShowCustomer.jsf HTTP/1.1" 200 2891
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:14:14 +0530] "POST /CanteenManagement/DashBoard.jsf HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:15:14:14 +0530] "GET /CanteenManagement/ShowCustomer.jsf HTTP/1.1" 200 2891

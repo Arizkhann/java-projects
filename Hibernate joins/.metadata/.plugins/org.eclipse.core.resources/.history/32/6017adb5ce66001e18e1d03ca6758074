@@ -1,0 +1,34 @@
+package com.java.inf;
+
+import java.util.Scanner;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner sc=new Scanner(System.in);
+		 String name=sc.next();
+		 System.out.println("enter ur name");
+		 int pin=sc.nextInt();
+		 System.out.println("enter ur pin");
+		 
+		 int balance=1000;
+		 
+		 
+		 
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}

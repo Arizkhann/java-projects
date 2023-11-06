@@ -1,0 +1,30 @@
+package com.java.jsf;
+
+import java.util.List;
+
+import org.hibernate.Session;
+
+
+public class EmployDAOImpl implements EmployDAO {
+
+	
+	Session session;
+	
+	
+	
+	@Override
+	public List<Employ> showEmployDao() {
+		session=SessionHelper.getConnection().openSession();
+		Query query=session.getNamedQuery("showEmploy")
+		
+		
+		
+	}
+
+	@Override
+	public Employ searchEmployDao(int empno) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

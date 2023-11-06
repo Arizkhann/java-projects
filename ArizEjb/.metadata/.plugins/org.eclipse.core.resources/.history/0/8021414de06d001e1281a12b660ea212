@@ -1,0 +1,59 @@
+package com.java.ejb;
+
+import java.util.List;
+
+public class PatientImpl implements PatientDAO {
+
+	@Override
+	public List<PatientMaster> showPatientDao() {
+		// TODO Auto-generated method stub
+		connection = ConnectionHelper.getConnection();
+
+		String cmd = "Select * from patient_master";
+
+		pst = connection.prepareStatement(cmd);
+
+		ResultSet rs = pst.executeQuery();
+
+		List<PatientMaster> patientList = new ArrayList<PatientMaster>();
+
+		PatientMaster patient = null;
+
+		while(rs.next()) {
+
+			patient = new PatientMaster();
+
+			
+
+			patient.setPid(rs.getString("pid"));
+
+			patient.setName(rs.getString("name"));
+
+			patient.setAge(rs.getInt("age"));
+
+			patient.setWeight(rs.getInt("weight"));
+
+			patient.setGender(rs.getString("gender"));
+
+			patient.setAddress(rs.getString("address"));
+
+			patient.setPhoneno(rs.getString("phoneno"));
+
+			patient.setDisease(rs.getString("disease"));
+
+			patient.setDrId(rs.getString("doctor_id"));
+
+			
+
+			patientList.add(patient);
+
+			
+
+		}
+
+		return patientList;
+
+	
+	}
+
+}

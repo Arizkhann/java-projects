@@ -1,0 +1,55 @@
+package com.java.ejb;
+
+public class InsurancePlans {
+
+	
+	private int planId;
+	private String insuranceId;
+	private double premiumAmount;
+	private double covAmount;
+	public int getPlanId() {
+		return planId;
+	}
+	public void setPlanId(int planId) {
+		this.planId = planId;
+	}
+	public String getInsuranceId() {
+		return insuranceId;
+	}
+	public void setInsuranceId(String insuranceId) {
+		this.insuranceId = insuranceId;
+	}
+	public double getPremiumAmount() {
+		return premiumAmount;
+	}
+	public void setPremiumAmount(double premiumAmount) {
+		this.premiumAmount = premiumAmount;
+	}
+	public double getCovAmount() {
+		return covAmount;
+	}
+	public void setCovAmount(double covAmount) {
+		this.covAmount = covAmount;
+	}
+	@Override
+	public String toString() {
+		return "InsurancePlans [planId=" + planId + ", insuranceId=" + insuranceId + ", premiumAmount=" + premiumAmount
+				+ ", covAmount=" + covAmount + "]";
+	}
+	public InsurancePlans(int planId, String insuranceId, double premiumAmount, double covAmount) {
+		super();
+		this.planId = planId;
+		this.insuranceId = insuranceId;
+		this.premiumAmount = premiumAmount;
+		this.covAmount = covAmount;
+	}
+	public InsurancePlans() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	
+	
+}

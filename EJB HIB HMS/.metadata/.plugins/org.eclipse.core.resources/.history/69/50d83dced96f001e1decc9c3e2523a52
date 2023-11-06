@@ -1,0 +1,38 @@
+package com.java.ejb;
+
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class PatientImpl implements PatientDao {
+
+	SessionFactory sf ;
+	Session session;
+	
+	
+	public List<Patient> showPatient() {
+		
+		sf = SessionHelper.getConnection();
+		session = sf.openSession();
+		Criteria cr = session.createCriteria(Patient.class);
+		
+		List<Patient> list = cr.list();
+		return list	;
+		
+	}
+
+
+	@Override
+	public List<Patient> showPatienttDao() {
+		sf = SessionHelper.getConnection();
+		session = sf.openSession();
+		Criteria cr = session.createCriteria(Patient.class);
+		
+		List<Patient> list = cr.list();
+		return list	;
+		
+	}
+
+}

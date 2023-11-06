@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>simple website</title>
+<link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+	
+ <h1 align="center">
+	 <font face="lato" size="6">LOGO</font>
+	 &nbsp;&nbsp;
+	 <font face="cinzel"
+	 <a href="#">HOME</a>
+	 <a href="#">VIDEOS</a>
+	 <a href="#">PORTFOLIO</a>
+	 <a href="#">BLOG</a>
+	  <a href="#">CONTACT US</a>
+	
+	
+		 
+	 </font>
+ </h1>
+
+
+
+</body>
+</html>

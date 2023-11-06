@@ -1,0 +1,20 @@
+package com.java.ejb;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class PatientReportsBean
+ */
+@Stateless
+@LocalBean
+public class PatientReportsBean implements PatientReportsBeanRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public PatientReportsBean() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

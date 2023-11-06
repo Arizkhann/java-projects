@@ -1,0 +1,9 @@
+package com.java.hotel;
+
+import java.util.List;
+
+public interface CustomerDAO {
+
+List<Customer> showCustomerDAO();
+	
+}

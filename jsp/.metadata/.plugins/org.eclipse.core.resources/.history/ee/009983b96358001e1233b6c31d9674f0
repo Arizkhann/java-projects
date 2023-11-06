@@ -1,0 +1,248 @@
+package com.java.agent;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.java.agent.AgentConnectionHelper;
+import com.java.agent.AgentConnectionHelper;
+import com.java.agent.AgentConnectionHelper;
+
+public class AgentDAOImpl implements AgentDAO {
+
+	Connection connection;
+
+	PreparedStatement pst;
+	
+//create method ------------------------------------------------------
+	@Override
+	public String createAccountDao(Agent agent) throws ClassNotFoundException, SQLException {
+		
+//		int id= generateAgentId();
+//		agent.setAgentId(id);
+		connection = AgentConnectionHelper.getConnection();
+		
+		connection = AgentConnectionHelper.getConnection();
+
+		String cmd = "Insert into Agent(AgentId,Name, City,Gender, MaritalStatus, Premium) values(?,?,?,?,?,?)";
+	
+		pst = connection.prepareStatement(cmd);
+		pst.setInt(1,agent.getAgentId());
+
+		pst.setString(2, agent.getName());
+
+		pst.setString(3,agent.getCity());
+
+		pst.setString(4, agent.getGender());
+
+		pst.setDouble(5, agent.getPremium());
+
+		pst.setInt(6, agent.getMaritalStatus());
+
+		
+		pst.executeUpdate();
+
+		return "Agent  created with AgentId " ;
+
+		
+			}
+
+
+
+
+
+	
+//show method ----------------------------------------------
+	@Override
+
+	public List<Agent> showAgentDao() throws ClassNotFoundException, SQLException {
+
+	    Connection connection = null;
+
+	    PreparedStatement preparedStatement = null;
+
+	    ResultSet resultSet = null;
+
+ 
+
+	    try {
+
+	     
+
+	        connection = AgentConnectionHelper.getConnection();
+
+ 
+
+	        String query = "SELECT * FROM Agent";
+
+	        preparedStatement = connection.prepareStatement(query);
+
+ 
+
+	       
+
+	        resultSet = preparedStatement.executeQuery();
+
+ 
+
+	        while (resultSet.next()) {
+
+	           
+
+	            int agentId = resultSet.getInt("AgentId");
+
+	            String name = resultSet.getString("Name");
+
+	            String city = resultSet.getString("City");
+
+	            String gender = resultSet.getString("Gender");
+
+	            int maritalStatus = resultSet.getInt("MaritalStatus");
+
+	            double premium = resultSet.getDouble("Premium");
+
+ 
+
+	            System.out.println("Agent ID: " + agentId);
+
+	            System.out.println("Name: " + name);
+
+	            System.out.println("City: " + city);
+
+	            System.out.println("Gender: " + gender);
+
+	            System.out.println("Marital Status: " + maritalStatus);
+
+	            System.out.println("Premium: " + premium);
+
+	            System.out.println();
+
+	        }
+
+	    } finally {
+
+	  
+
+	        if (resultSet != null) {
+
+	            resultSet.close();
+
+	        }
+
+	        if (preparedStatement != null) {
+
+	            preparedStatement.close();
+
+	        }
+
+	        if (connection != null) {
+
+	            connection.close();
+
+	        }
+
+	    }
+
+		return null;
+
+	}
+
+
+
+
+//search method ------------------------------------------------
+
+
+	@Override
+	public Agent searchAgentDao(int agentId) throws SQLException, ClassNotFoundException {
+		
+		
+		 connection = AgentConnectionHelper.getConnection();
+		 String cmd="select * from agent where agentId=?";
+		 
+		 pst=connection.prepareStatement(cmd);
+		 pst.setInt(1, agentId);
+		 ResultSet rs=pst.executeQuery();		
+		
+		 
+		 List<Agent> agentList= new ArrayList<Agent>();
+		 Agent agent=null;
+		 if (rs.next()) {
+			 
+			 agent =new Agent();
+			 
+			 
+			 agent.setAgentId(rs.getInt("agentId"));
+			 agent.setName(rs.getString("name"));
+			 agent.setCity(rs.getString("city") );
+			 agent.setGender(
+					 (rs.getString("gender")));
+			 agent.setMaritalStatus(rs.getInt("maritalStatus"));
+			 agent.setPremium(rs.getDouble("premium"));
+ 
+		 }
+		 
+		 return agent;
+	}
+
+
+
+//delete operation ------------------------------------------------
+
+
+	@Override
+	public String deleteAccountDao(int agentId) throws SQLException, ClassNotFoundException {
+		Agent agent=searchAgentDao(agentId);
+		
+		if (agent!=null) {
+			
+			connection =AgentConnectionHelper.getConnection();
+			String cmd="delete from agent where agentId=?";
+			pst=connection.prepareStatement(cmd);
+			pst.setInt(1, agentId);
+			pst.executeUpdate();
+			return ".....AGENT RECORD DELETED......";
+	
+		}
+		
+		
+		return"....RECORD NOT FOUND...";
+	}
+
+
+
+
+
+
+	@Override
+	public String updateAgentDao(Agent agentNew) throws ClassNotFoundException, SQLException {
+		Agent agentFound=searchAgentDao(agentNew.getAgentId());
+		
+		if(agentFound!=null) {
+			connection=AgentConnectionHelper.getConnection();
+			String cmd="update Agent set name=?,Gender=?,MaritalStatus=?,premium=?"+" where empno=?";
+			pst=connection.prepareStatement(cmd);
+			pst.setString(1,agentNew.getName());
+			pst.setString(2, agentNew.getCity());
+			pst.setString(3, agentNew.getGender());
+			pst.setInt(4, agentNew.getMaritalStatus());
+			pst.setDouble(5, agentNew.getPremium());
+			pst.executeUpdate();
+			return"....agent record updated..";
+			
+			
+		}
+		return "....record not found.....";
+		
+	}
+
+ 
+	}
+
+
+	
+	
+

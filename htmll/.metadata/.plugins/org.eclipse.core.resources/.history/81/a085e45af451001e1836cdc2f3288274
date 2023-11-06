@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	
+	function show(checkboxId, resultId){
+		var checkbox = document.getElementById(checkboxId);
+		var resultSpan = document.getElementById(resultId);
+		
+		if(checkbox.checked){
+			resultSpan.innerHTML = "Present";
+		}
+		else{
+			resultSpan.innerHTML = "Absent";
+		}
+	
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="frmData">
+		<center>
+			Ariz:
+			<input type="checkbox" name="chkAriz" onchange="show()" /> <br/><br/>
+			<span id="result"></span>
+			<input type="button" value="show"/> 
+		</center>
+		<center>
+			Subudi:
+			<input type="checkbox" name="chkSubudi" onchange="show()" /> <br/><br/>
+			<span id="result"></span>
+			<input type="button" value="show"/> 
+		</center>
+		<center>
+			Anirudh:
+			<input type="checkbox" name="chkAnirudh" onchange="show()" /> <br/><br/>
+			<span id="result"></span>
+			<input type="button" value="show"/> 
+		</center>
+	</form>
+
+</body>
+</html>

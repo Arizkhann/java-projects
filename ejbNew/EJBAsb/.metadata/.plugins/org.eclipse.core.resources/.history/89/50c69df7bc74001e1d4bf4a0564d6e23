@@ -1,0 +1,16 @@
+package com.java.ejb;
+
+import java.io.Serializable;
+
+public class PatientReport implements Serializable{
+
+	private int reportId;
+	private String patientId;
+	private String testCode;
+	private String testName;
+	private String testDescription;
+	private double cost;
+	private String comments;
+	
+	
+}

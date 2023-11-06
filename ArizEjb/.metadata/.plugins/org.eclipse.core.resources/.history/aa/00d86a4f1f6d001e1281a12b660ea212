@@ -1,0 +1,20 @@
+package com.java.ejb;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class AgentEjbBean
+ */
+@Stateless
+@LocalBean
+public class AgentEjbBean implements AgentEjbBeanRemote {
+
+    /**
+     * Default constructor. 
+     */
+    public AgentEjbBean() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

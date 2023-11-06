@@ -1,0 +1,13 @@
+#shows{
+	
+	color: white;
+	width: 20%;
+	background-color: black;
+	margin-top: 200px;
+}
+
+#shows:hover{
+	font-weight: bold;
+	background-color: gray;
+	
+}

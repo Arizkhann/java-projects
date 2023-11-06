@@ -1,0 +1,62 @@
+package com.java.hotel;
+
+import java.sql.Date;
+
+public class Customer {
+
+	
+	private int customerId;
+	private String customerName;
+	private Date checkIn;
+	private Date checkOut;
+	private int roomNo;
+	public int getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public Date getCheckIn() {
+		return checkIn;
+	}
+	public void setCheckIn(Date checkIn) {
+		this.checkIn = checkIn;
+	}
+	public Date getCheckOut() {
+		return checkOut;
+	}
+	public void setCheckOut(Date checkOut) {
+		this.checkOut = checkOut;
+	}
+	public int getRoomNo() {
+		return roomNo;
+	}
+	public void setRoomNo(int roomNo) {
+		this.roomNo = roomNo;
+	}
+	@Override
+	public String toString() {
+		return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", checkIn=" + checkIn
+				+ ", checkOut=" + checkOut + ", roomNo=" + roomNo + "]";
+	}
+	public Customer(int customerId, String customerName, Date checkIn, Date checkOut, int roomNo) {
+		super();
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.checkIn = checkIn;
+		this.checkOut = checkOut;
+		this.roomNo = roomNo;
+	}
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

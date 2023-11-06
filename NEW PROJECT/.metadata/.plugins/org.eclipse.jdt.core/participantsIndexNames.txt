@@ -1,0 +1,3 @@
+INDEX VERSION 1.132
+D:\NEW PROJECT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1325560600.index
+\IMSClient2\src\main\java

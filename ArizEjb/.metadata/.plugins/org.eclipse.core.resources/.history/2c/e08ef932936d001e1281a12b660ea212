@@ -1,0 +1,23 @@
+public class Dummy {
+
+ 
+
+	public static void main(String[] args) {
+
+		try {
+
+			System.out.println(new HmsEjbBean().showDoctor());
+
+		} catch (ClassNotFoundException | SQLException e) {
+
+			// TODO Auto-generated catch block
+
+			e.printStackTrace();
+
+		}
+
+	}
+
+}
+
+ 

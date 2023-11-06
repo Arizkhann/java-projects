@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CanteenManagement/src/main/webapp/Dashboard.jsp&apos; to &apos;DashBoard.jsp&apos;" description="Rename resource &apos;Dashboard.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/Dashboard.jsp" name="DashBoard.jsp" stamp="1696842843862" updateReferences="true"/>
+</session>

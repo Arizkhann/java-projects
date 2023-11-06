@@ -1,0 +1,46 @@
+package com.java.ejb;
+
+import java.util.List;
+
+import javax.naming.NamingException;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class PatientImpl implements PatientDao {
+
+	SessionFactory sf ;
+	Session session;
+	
+	
+	
+		
+	
+
+	@Override
+	public List<Patient> showPatientDao() {
+		sf = SessionHelper.getConnection();
+		session = sf.openSession();
+		Criteria cr = session.createCriteria(Patient.class);
+		
+		List<Patient> list = cr.list();
+		return list	;
+		
+	}
+
+
+
+@Override
+public String addPatient(Patient patient) throws NamingException {
+	
+		sf = SessionHelper.getConnection();
+		session = sf.openSession();
+		Transaction trans = session.beginTransaction();
+		session.save(patient);
+		trans.commit();
+		return "ShowPatient.jsp?faces-redirect=true";
+	}
+	
+}

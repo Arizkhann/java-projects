@@ -1,0 +1,7 @@
+package com.java.library;
+
+public interface LibraryDAO {
+
+	String createUser(LibUsers libUsers);
+	
+}

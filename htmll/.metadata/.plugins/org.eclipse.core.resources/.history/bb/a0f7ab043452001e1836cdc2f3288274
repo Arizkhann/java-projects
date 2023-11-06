@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <script>
+
+       
+
+    </script>
+
+</head>
+
+<body>
+
+    <form login = "frmlogin">
+
+        <table border="3" align="center">
+
+            <tr>
+
+                <th colspan="2">
+
+                    Leave Application From
+
+                </th>
+
+            </tr>
+
+            <tr>
+
+                <th>Leave Id</th>
+
+                <td>
+
+                    <select name = "leaveid">
+
+                        <option value="lev1">1001</option>
+
+                        <option value="lev2">1002</option>
+
+                        <option value="lev3">1003</option>
+
+                        <option value="lev4">1004</option>
+
+                    </select>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Manager Name</th>
+
+                <td>
+
+                    <select name = "manager">
+
+                        <option value="Murari">Murari</option>
+
+                        <option value="vijay">vijay</option>
+
+                        <option value="Anirudha">Anirudha</option>
+
+                        <option value="Nitish">Nitish</option>
+
+                    </select>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Leave Start Date</th>
+
+                <td>
+
+                    <input type="Date">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Leave End Date</th>
+
+                <td>
+
+                    <input type="Date">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>No OF Days</th>
+
+            </tr>
+
+            <tr>
+
+                <th>Leave Type</th>
+
+                <td>
+
+                    <select name = "leavetype">
+
+                        <option value="lev1">EL</option>
+
+                        <option value="lev2">PL</option>
+
+                        <option value="lev3">SL</option>
+
+                    </select>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Leave Status</th>
+
+                <td>
+
+                    <select name = "leaveStatus">
+
+                        <option value="lev1">ACCEPTED</option>
+
+                        <option value="lev2">REJECTED</option>
+
+                        <option value="lev3">PENDING</option>
+
+                    </select>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Applied on</th>
+
+					<td>
+						
+                    	<input type="Date">
+
+               		 </td>
+            </tr>
+
+            <tr>
+
+                <th>Manager Commnet</th>
+
+                <td>
+
+                    <input type="text">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th colspan="2">
+
+                    <input type="button" value="Submit">
+
+                    <input type="button" value="Reset">
+
+                </th>
+
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>

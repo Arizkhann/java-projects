@@ -1,0 +1,7 @@
+INDEX VERSION 1.132
+D:\day 27 hib\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\499447037.index
+\JspJsf\src\main\java
+D:\day 27 hib\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1512883353.index
+\hibjsfExamp\src\main\java
+D:\day 27 hib\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4191498203.index
+\JsfHibJsp\src\main\java

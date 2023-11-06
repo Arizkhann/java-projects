@@ -1,0 +1,59 @@
+package com.java.ejb;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class AgentEjbBean
+ */
+@Stateless
+@Remote(AgentEjbBeanRemote.class)
+public class AgentEjbBean implements AgentEjbBeanRemote {
+
+	static AgentDAO daoImpl; 
+	
+	static {
+		daoImpl=new AgentDAOImpl();
+	}
+	
+    /**
+     * Default constructor. 
+     */
+    public AgentEjbBean() {
+        // TODO Auto-generated constructor stub
+    }
+
+	@Override
+	public List<Agent> showAgent() throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return daoImpl.showAgentDao();
+	}
+
+	@Override
+	public Agent searchAgent(int agentId) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return daoImpl.searchAgentDao(agentId);}
+	
+	@Override
+	public String addAgent(Agent agent) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return daoImpl.addAgentDao(agent);
+	}
+
+	@Override
+	public String deleteAgent(int agentId) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return daoImpl.deleteAgentDao(agentId);
+	}
+
+	@Override
+	public String updateAgent(Agent Agent) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return daoImpl.updateAgentDao(Agent);
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.java.ejb;
+
+import java.util.List;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class HmsEjbBean
+ */
+@Stateless
+@Remote(HmsEjbBeanRemote.class)
+public class HmsEjbBean implements HmsEjbBeanRemote {
+
+	static DoctorDAO daoImpl;
+	static {
+		daoImpl = new DoctorImpl();
+	}
+    public HmsEjbBean() {
+        // TODO Auto-generated constructor stub
+    }
+
+	@Override
+	public List<DoctorMaster> showDoctor() {
+		// TODO Auto-generated method stub
+		return daoImpl.showDoctorDao();
+	}
+
+}

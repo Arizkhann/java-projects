@@ -1,0 +1,53 @@
+package com.java.inf;
+
+public class Employee {
+
+	private int employeeID;
+
+	private String name;
+
+	private String email;
+
+	public int getEmployeeID() {
+		return employeeID;
+	}
+
+	public void setEmployeeID(int employeeID) {
+		this.employeeID = employeeID;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [employeeID=" + employeeID + ", name=" + name + ", email=" + email + "]";
+	}
+
+	public Employee(int employeeID, String name, String email) {
+		super();
+		this.employeeID = employeeID;
+		this.name = name;
+		this.email = email;
+	}
+
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

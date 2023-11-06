@@ -1,0 +1,12 @@
+#shows{
+	
+	color: white;
+	width: 20%;
+	background-color: black;
+}
+
+#shows:hover{
+	
+	background-color: gray;
+	
+}

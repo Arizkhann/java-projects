@@ -1,0 +1,14 @@
+package com.java.ejb;
+
+import java.util.List;
+
+public class Dummy {
+	
+	public static void main(String[] args) {
+		
+		EmployBeanRemote remote = new EmployBean();
+		
+		System.out.println(remote.showEmploy());
+	}
+
+}

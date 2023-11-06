@@ -1,0 +1,11 @@
+package com.java.ejb;
+
+import java.util.List;
+
+public class EjbImpl {
+
+	public List<Employ> showEmploy(){
+	EmployBeanRemote remote=RemoteHelper.lookupRemoteStatelessHms();
+	return remote.showEmployDao();
+	
+}}

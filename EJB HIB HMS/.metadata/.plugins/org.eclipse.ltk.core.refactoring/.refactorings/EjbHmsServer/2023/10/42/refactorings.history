@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;EjbHmsClient/src/main/java/com.java.ejb&apos;&#x0D;&#x0A;- Original project: &apos;EjbHmsServer&apos;&#x0D;&#x0A;- Destination element: &apos;EjbHmsClient/src/main/java/com.java.ejb&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.java.ejb.Doctor.java&#x0D;&#x0A;     com.java.ejb.HmsBeanRemote.java" description="Copy compilation units" destination="=EjbHmsClient/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.java.ejb" element1="/ejbModule&lt;com.java.ejb{Doctor.java" element2="/ejbModule&lt;com.java.ejb{HmsBeanRemote.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1697797102049" units="2" version="1.0"/>
+</session>

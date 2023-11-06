@@ -1,0 +1,6 @@
+package com.java.ejb;
+
+public class PatientDAO {
+
+	List<Patient> showPatient();
+}

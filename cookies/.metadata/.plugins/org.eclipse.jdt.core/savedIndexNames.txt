@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+D:\cookies\.metadata\.plugins\org.eclipse.jdt.core
+797070664.index
+2647957295.index
+1865797976.index
+4225613332.index
+3431831545.index

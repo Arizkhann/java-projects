@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function show(){
+		var today=new Date();
+		var fullyear=today.getFullYear();
+		var future=new Date("december 31,"+ fullyear);
+		var diff=future.getTime()-today.getTime();
+		
+		var days=Math.ceil(diff/(1000*60*60*24));
+		var countdownMessage ="only <u>"+ days + "</u> days left 'till new year'!";
+		
+		 document.getElementById("countdown").innerHTML = countdownMessage;
+	}
+	
+	
+</script>
+	
+	
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body onload="show()">
+	<h1>new year countdown</h1>
+	<p id="countdown"></p>
+	
+</body>
+</html>

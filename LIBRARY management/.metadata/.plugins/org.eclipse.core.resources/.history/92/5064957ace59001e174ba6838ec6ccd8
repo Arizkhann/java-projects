@@ -1,0 +1,201 @@
+[10:26 AM] Anirudh Mehta
+
+<%@page import="com.java.library.LibUsers"%>
+
+<%@page import="com.java.library.LibraryDaoImpl"%>
+
+<%@page import="com.java.library.LibraryDAO"%>
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+
+    pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="ISO-8859-1">
+
+<title>Insert title here</title>
+
+</head>
+
+<body>
+
+	<form method="post" action="AddUser.jsp">
+
+		User Name :
+
+		<input type="text" name="userName" /> <br/><br/>
+
+		Password :
+
+		<input type="password" name="passCode" /> <br/><br/>
+
+		Re-Type Password :
+
+		<input type="password" name="retypePassCode" /> <br/><br/>
+
+		<input type="submit" value="Create Account" />
+
+	</form>
+
+	<%
+
+		if (request.getParameter("userName")!=null &&
+
+			request.getParameter("passCode")!=null
+
+				) {
+
+			String pwd = request.getParameter("passCode");
+
+			String retype = request.getParameter("retypePassCode");
+
+			if (pwd.equals(retype)) {
+
+				LibraryDAO dao = new LibraryDaoImpl();
+
+				LibUsers libUsers = new LibUsers();
+
+				libUsers.setUserName(request.getParameter("userName"));
+
+				libUsers.setPassword(pwd);
+
+				out.println(dao.createUser(libUsers));
+
+			} else {
+
+				out.println("Password Mismatch...");
+
+			}
+
+		}
+
+	%>
+
+</body>
+
+</html>
+
+[10:26 AM] Anirudh Mehta
+
+package com.java.lib;
+
+ 
+
+ 
+
+import java.sql.Connection;
+
+ 
+
+import java.sql.PreparedStatement;
+
+ 
+
+import java.sql.SQLException;
+
+ 
+
+ 
+
+ 
+
+public  class LibraryDaoImpl implements LibraryDAO{
+
+ 
+
+	
+
+ 
+
+	Connection connection;
+
+ 
+
+	PreparedStatement pst;
+
+ 
+
+	
+
+ 
+
+	public boolean checkPassword(String pwd, String retype) {
+
+ 
+
+		if(pwd.equals(retype)) {
+
+ 
+
+			return true;
+
+ 
+
+		}
+
+ 
+
+		return false;
+
+ 
+
+	}
+
+ 
+
+ 
+
+	@Override
+
+ 
+
+	public String createUser(LibUsers libUsers) throws ClassNotFoundException, SQLException {
+
+ 
+
+		connection = ConnectionHelper.getConnection();
+
+ 
+
+		String encPwd = EncryptPassword.getCode(libUsers.getPassWord());
+
+ 
+
+		String cmd = "Insert into LibUsers(UserName, Password) values (?,?)";
+
+ 
+
+		pst = connection.prepareStatement(cmd);
+
+ 
+
+		pst.setString(1, libUsers.getUserName());
+
+ 
+
+		pst.setString(2, encPwd);
+
+ 
+
+	    pst.executeUpdate();
+
+ 
+
+	    return "Uset account Created";
+
+ 
+
+	}
+
+ 
+
+ 
+
+ 
+
+}

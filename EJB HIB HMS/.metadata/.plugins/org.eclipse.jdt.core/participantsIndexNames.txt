@@ -1,0 +1,9 @@
+INDEX VERSION 1.132
+D:\EJB HIB HMS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3749280015.index
+\HmsEjbClient\src\main\java
+D:\EJB HIB HMS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\152123958.index
+\HmsEjbServer\ejbModule
+D:\EJB HIB HMS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2466918730.index
+\EjbHmsClient\src\main\java
+D:\EJB HIB HMS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3648887988.index
+\InsuranceClient\src\main\java

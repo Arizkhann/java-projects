@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\HMS project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3243905730.index
+800659362.index
+438709762.index
+36146957.index
+1772323448.index
+1888016423.index

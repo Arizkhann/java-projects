@@ -1,0 +1,26 @@
+package com.java.ejb;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.naming.NamingException;
+
+public class AgentEjbImpl {
+
+	public List<Agent> showAgentEjb() throws ClassNotFoundException, SQLException, NamingException{
+		
+		AgentEjbBeanRemote remote=
+							RemoteHelper.lookupRemoteStatelessEmploy();
+		return remote.showAgent();
+		
+		}
+	
+public String addAgentEjb(Agent agent) throws NamingException, ClassNotFoundException, SQLException {
+		
+		AgentEjbBeanRemote remote=
+							RemoteHelper.lookupRemoteStatelessEmploy();
+		return remote.addAgent(agent);
+	
+	}
+	
+}

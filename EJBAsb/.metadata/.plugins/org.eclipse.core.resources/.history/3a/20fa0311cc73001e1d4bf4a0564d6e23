@@ -1,0 +1,11 @@
+package com.java.ejb;
+
+public class InsurancePlans {
+
+	
+	private int planId;
+	private String insuranceId;
+	private double premiumAmount;
+	private double covAmount;
+	
+}

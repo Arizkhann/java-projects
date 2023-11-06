@@ -1,0 +1,18 @@
+package com.java.ejb;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class PatientImpl implements PatientDAO{
+
+	SessionFactory sf ;
+	Session session;
+	
+	@Override
+	public List<Patient> showPatient() {
+		
+	}
+
+}

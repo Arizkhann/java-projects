@@ -1,0 +1,16 @@
+package com.java.ejb;
+
+import java.util.List;
+
+import com.java.ejb.DoctorMaster;
+
+public class DoctorImpl implements DoctorDAO{
+
+	@Override
+	public List<DoctorMaster> showDoctorDao() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

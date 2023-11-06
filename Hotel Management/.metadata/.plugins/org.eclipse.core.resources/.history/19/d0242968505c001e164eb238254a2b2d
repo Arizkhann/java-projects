@@ -1,0 +1,8 @@
+package com.java.hotel;
+
+public interface CustomerDAO {
+
+	String searchCustomerDAO(Customer customer);
+	
+	
+}

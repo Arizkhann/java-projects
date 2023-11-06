@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	
+	function show(){
+		
+		var firstname,lastname,fullname;
+		firstname=frmData.firstname.value;
+		lastname=frmData.lastname.value;
+		fullname=firstname+lastname;
+		frmData.fullname.value=fullname;
+	}
+	
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="frmData">
+	<table border="3" align="center">
+		<tr> 
+			<th colspan="2">
+				name form
+			</th>
+		</tr>
+		<tr>
+			<th>First name</th>
+			<td>
+				<input type="text" name="firstname" />
+				<span id="err1" style="color:red;"></span>
+			</td>
+		</tr>
+		<tr>
+			<th>last name</th>
+			<td>
+				<input type="text" name="lastname"   onblur="show()" />
+				<span id="err2" style="color:red;"></span>
+			</td>
+		</tr>
+		<tr>
+			<th>FUll NAME</th>
+			<td>
+				<input type="text" name="fullname" />
+			</td>
+		</tr>
+	</table>
+	<input type="button" value="fullname" onclick="show()" />
+</form>
+
+
+
+</body>
+</html>

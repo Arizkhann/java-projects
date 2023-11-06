@@ -1,0 +1,6 @@
+#shows{
+	
+	color: blue;
+	width: 20%;
+	height: 10%;
+}

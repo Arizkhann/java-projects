@@ -1,0 +1,5 @@
+1698086878094	Rename type 'EjbImpl'
+1698143892242	Rename type 'Customer'
+1698143944986	Rename resource 'Customer.hbm.xml'
+1698144160280	Rename type 'Customer_details'
+1698144183102	Rename resource 'Customer_details.hbm.xml'

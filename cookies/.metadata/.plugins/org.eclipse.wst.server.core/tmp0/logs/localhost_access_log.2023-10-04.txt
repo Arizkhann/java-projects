@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:00:03:27 +0530] "GET /Customer_Otp/SignUp.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:00:04:08 +0530] "POST /Customer_Otp/SignUpServlet HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:00:04:10 +0530] "POST /Customer_Otp/SignUpServlet HTTP/1.1" 200 30
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:00:05:30 +0530] "POST /Customer_Otp/SignUpServlet HTTP/1.1" 200 30
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:00:05:49 +0530] "GET /Customer_Otp/ValidateOtp.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:00:06:23 +0530] "GET /Customer_Otp/ValidateOtpServlet?userName=naveen&otpCode=20669 HTTP/1.1" 200 45
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:00:07:59 +0530] "POST /Customer_Otp/SignUpServlet HTTP/1.1" 200 30
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:00:09:01 +0530] "GET /Customer_Otp/ValidateOtpServlet?userName=anirudh&otpCode=14952 HTTP/1.1" 200 32

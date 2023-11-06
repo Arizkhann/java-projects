@@ -1,0 +1,24 @@
+package com.java.ejb;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="PatientReports")
+
+
+public class PatientReport implements Serializable{
+
+	private int reportId;
+	private String patientId;
+	private String testCode;
+	private String testName;
+	private String testDescription;
+	private double cost;
+	private String comments;
+	
+	
+}

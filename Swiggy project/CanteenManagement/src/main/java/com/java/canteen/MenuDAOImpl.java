@@ -1,0 +1,39 @@
+package com.java.canteen;
+
+import java.util.List;
+
+import javax.faces.context.FacesContext;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
+//import org.hibernate.mapping.Map;
+import java.util.Map;
+public class MenuDAOImpl {
+
+	
+	
+	SessionFactory sf;
+
+	Session session;
+	
+	
+	public String showMenu(int restaurantID) {
+		
+		Map<String,Object> sessionMap=FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
+		sf=SessionHelper.getConnection();
+		Session session = sf.openSession();
+		Criteria cr = session.createCriteria(Menu.class);
+		cr.add(Restrictions.eq("restaurantID", restaurantID));
+		List<Menu> menuList=cr.list();
+		sessionMap.put("menuList",menuList);
+		return "ShowMenu.jsp?faces-redirect=true";
+
+		
+		
+		
+	}
+
+	
+}
